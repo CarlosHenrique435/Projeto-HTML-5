@@ -28,20 +28,45 @@ header{
     color: white;
     margin: 0px;
     min-height: 150px;
+    padding-top: 20px;
 }
 header > h1{
     font-family: var(--font-destaque);
+    font-size: 3em;
     text-align: center;
     margin-top: 0px;
     padding: 10px;
+    text-shadow: 3px 1px 5px rgba(0, 0, 0, 0.658);
+
 }
 header > p {
     text-align: center;
+    font-size: 1.2em;
+    max-width: 600px;
     padding: 10px;
+    margin: auto;
 }
 nav{
     background-color: var(--cor3);
+    padding: 10px;
+    box-shadow: -1px 4px 9px 1px rgba(0, 0, 0, 0.616);
 }
+
+nav a{
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .3s;
+    
+}
+nav a:hover{
+    font-size: 1.2em;
+    background-color: var(--cor0);
+    color: var(--cor3);
+}
+
 main{
     background-color: white;
     text-align: justify;
@@ -49,6 +74,7 @@ main{
     max-width: 800px;
     margin: auto;
     margin-bottom: 20px;
+    margin-top: 5px;
     padding: 10px;
     box-shadow: 0px 0px 1px rgb(0, 0, 0);
     border-bottom-left-radius: 10px;
