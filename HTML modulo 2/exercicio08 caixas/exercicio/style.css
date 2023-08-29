@@ -11,7 +11,7 @@
     --cor0: #1CA5B8;
     --cor1: #6BDFEE;
     --cor2: #10606B;
-    --cor3: #0d474e;
+    --cor3: #093236;
 
     --font-padrao: Arial. Verdana, Helvetica, sans-serif;
     --font-destaque: "Bebas Neue", sans-serif;
@@ -47,7 +47,7 @@ header > p {
     margin: auto;
 }
 nav{
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     padding: 10px;
     box-shadow: -1px 4px 9px 1px rgba(0, 0, 0, 0.616);
 }
@@ -57,13 +57,12 @@ nav a{
     padding: 5px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-    transition-duration: .3s;
+    border-radius: 2px;
+    transition-duration: .2s;
     
 }
 nav a:hover{
-    font-size: 1.2em;
-    background-color: var(--cor0);
+    background-color: var(--cor1);
     color: var(--cor3);
 }
 
@@ -80,23 +79,46 @@ main{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+main p{
+    text-indent: 15px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong{
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor3);
+    background-color: var(--cor1);
+    padding: 2px 5px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
 main img{
     width: 100%;
 }
 
 main img.pequena{
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
 
 .titulo{
     font-family: 'droid';
-    background-image: linear-gradient(to right, #6BDFEE, #6bdfee28 70%);
+    font-size: 1.2em;
+    color: var(--cor3);
+    background-image: linear-gradient(to right, #6BDFEE, transparent);
     padding: 5px;
-}
-.alinha{
-    text-align: center ;
 }
 footer{
     background-color: var(--cor3);
