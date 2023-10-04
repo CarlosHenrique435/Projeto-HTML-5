@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         caption{
             background-color: gray;
@@ -25,6 +26,15 @@
         thead, tfoot{
             background-color: grey;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: grey;
+        }
+
+        tbody tr:nth-child(2n){
+            background-color: lightblue;
         }
         td.num{
             text-align: right;
@@ -46,8 +56,8 @@
         <caption>População brasileira</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" >Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -76,11 +86,51 @@
                 <td>Rio Grande do Sul</td>
                 <td class="num">13.564.467</td>
             </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">20.658.985</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">2.65.985</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">5.65.986</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">20.658.985</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">2.65.985</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">5.65.986</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">5.65.986</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">20.658.985</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">2.65.985</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">5.65.986</td>
+            </tr>
 
         </tbody>
         <tfoot>
             <tr>
-                <th><strong>Total de Abitantes</strong></th>
+                <th scope="row"><strong>Total de Abitantes</strong></th>
                 <td class="num">100.234.909(fake)</td>
             </tr>
         </tfoot>
