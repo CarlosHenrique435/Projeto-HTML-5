@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela completa</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+        }
+        thead{
+            background-color: rgba(52, 88, 206, 0.555);
+            color: white;
+            font-weight: bold;
+            height: 50px;
+        }
+        th, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de Tabelas</h1>
+    </header>
+    <main>
+        <table>
+            <caption>Pesquisa de filmes</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th scope="col" colspan="3">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4">Mulheres</th>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>350dni</td>
+                    <td>Toy Story</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Marta</td>
+                    <td>Pegue-me se for capaz</td>
+                    <td>Salve-se quem puder</td>
+                    <td>Tokio</td>
+                </tr>
+                <tr>
+                    <td>Katia</td>
+                    <td>Norbit</td>
+                    <td>Sex education</td>
+                    <td>Croods</td>
+                </tr>
+                <tr>
+                    <th rowspan="4">Homens</th>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td>Sonic</td>
+                    <td>Regresso</td>
+                    <td>Lobo wall</td>
+                </tr>
+                <tr>
+                    <td>Rafael</td>
+                    <td>Meninas malvadas</td>
+                    <td>Jornada de rei</td>
+                    <td>RED2</td>
+                </tr>
+                <tr>
+                    <td>Irineu</td>
+                    <td>Lupin</td>
+                    <td>Breaking bad</td>
+                    <td>Gente grande</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
