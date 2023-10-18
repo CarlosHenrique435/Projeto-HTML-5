@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grounping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cyan;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(115, 158, 238);
+            padding: 5px;
+            text-align: right;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.527);
+        }
+        nav > a{
+            text-decoration: none;
+            color:rgb(68, 50, 173);
+            font-weight: bold;
+            padding: 10px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            text-decoration-color: rgb(28, 28, 82);
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 0px;
+            
+        }
+        section{
+            text-align: center;
+            padding: 10px;
+        }
+        article{
+            width: 550px;
+            background-color: rgba(80, 106, 224, 0.089);
+            padding: 5px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        
+        article > aside{
+            background-color: grey;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            Esportes Politica Tecnologia
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Brasil em ação</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste labore deserunt ullam? Eligendi reprehenderit reiciendis beatae aut aliquid nihil quibusdam expedita, debitis assumenda quis quod dicta. Corporis totam aut perspiciatis!</p>
+                <aside>
+                    <p>Artigo por Jose Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Densenvolvido por carlos henrique</p>
+    </footer>
+</body>
+</html>

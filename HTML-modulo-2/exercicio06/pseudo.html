@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classest</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: aqua;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+        div:hover{
+            background-color: yellow;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: rgb(50, 50, 92);
+        }
+        div:active{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="1">
+        01
+    </div>
+    <div id="2">
+        02
+    </div>
+    <div id="3">
+        03
+        <p>Texto escondido</p>
+    </div>
+</body>
+</html>
